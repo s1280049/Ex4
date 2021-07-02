@@ -5,6 +5,11 @@
 int main(){
 int diceA, diceB;
 srand((unsigned int)time(NULL));
+char name[20];
+
+printf("What is your name? \n> ");
+scanf("%s", name);
+printf("Hello, %s!\n", name);
 
 printf("Rolling the dice...\n");
 diceA = rand() % 6 +1;
